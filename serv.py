@@ -6,10 +6,6 @@ app = socketio.ASGIApp(sio)
 
 @sio.on('connect')
 def conncet(sid):
-   
-    data = {"key": "value"}
-    with open("file.json", "w") as file:
-        json.dump(data, file)
 
     with open("file.json", "r") as file:
         conncets = file.read()
