@@ -7,13 +7,11 @@ const ServerData = () => {
 
     socket.on('event', (data) => {
       return (
-        <div>
           <table>
             <tr>
               <td>{data}</td>
             </tr>
           </table>
-        </div>
       );
     });
 
